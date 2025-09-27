@@ -1,0 +1,157 @@
+// styles/auth.scss
+
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #121212 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 600px;
+  background: #1e1e1e;
+  border: 1px solid #2d2d2d;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
+  }
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding-top: 40px;
+
+  .auth-title {
+    color: #bb86fc;
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .auth-subtitle {
+    color: #bbbbbb;
+    margin: 0;
+  }
+}
+
+.auth-form {
+  padding: 0 40px 40px;
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.auth-label {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.auth-input {
+  background: #1e1e1e !important;
+  border: 1px solid #2d2d2d !important;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+
+  // Normal input and password input text color
+  color: #ffffff !important;
+
+  // Input itself (for Ant Design nesting)
+  input {
+    color: #ffffff !important;
+
+    &::placeholder {
+      color: #666666 !important;
+    }
+
+    // Autofill fix
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #ffffff !important;
+      transition: background-color 9999s ease-in-out 0s;
+    }
+  }
+
+  &::placeholder {
+    color: #666666 !important;
+  }
+
+  &:hover {
+    border-color: #bb86fc !important;
+  }
+
+  &:focus,
+  &.ant-input-focused {
+    border-color: #bb86fc !important;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.3) !important;
+  }
+
+  // Password field icon (eye icon)
+  .ant-input-password-icon {
+    color: #bbbbbb !important;
+
+    &:hover {
+      color: #bb86fc !important;
+    }
+  }
+
+  // Password input inside wrapper
+  .ant-input-password,
+  .ant-input-password input {
+    color: #ffffff !important;
+  }
+}
+
+.auth-button {
+  background: #bb86fc;
+  color: #121212;
+  border: none;
+  height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    filter: brightness(110%);
+    transform: scale(1.02);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+
+  .auth-link-text {
+    color: #bbbbbb;
+  }
+
+  .auth-link {
+    color: #bb86fc;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: brightness(125%);
+    }
+  }
+}
