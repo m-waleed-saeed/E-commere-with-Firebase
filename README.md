@@ -1,13 +1,31 @@
-# React + Vite
+# LuxuryTech — E-commerce Web App (React + Firebase + Supabase)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live demo: https://luxurytech.vercel.app  
+Repository: https://github.com/m-waleed-saeed/E-commere-with-Firebase
 
-Currently, two official plugins are available:
+## Summary
+LuxuryTech is a modern e-commerce web application showcasing a premium "black tech" UI and complete full-stack functionality. Built to demonstrate secure authentication, data-driven product management, image storage, and an admin dashboard with full CRUD and order management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+- Frontend: React (functional components, hooks)  
+- Styling: Tailwind / custom CSS (or Ant Design used where applicable)  
+- Authentication: Firebase Authentication (email/password)  
+- Database: Firebase Firestore (products, orders, users, newsletters)  
+- Storage: Supabase Storage (product images, multi-image per product)  
+- Hosting: Vercel (frontend deployment)  
+- Optional: Payment flow placeholder (add Stripe/PayPal as next step)
 
-## Expanding the ESLint configuration
+## Key features
+- Secure user registration & login (Firebase Auth)
+- Product catalog with product detail pages
+- Cart: add/remove/update quantities
+- Checkout flow that records orders to Firestore
+- Admin panel:
+  - Full CRUD for products (create, read, update, delete)
+  - Upload multiple images per product (Supabase)
+  - Manage orders (status updates)
+  - Manage users and newsletters
+- Responsive, premium black-tech UI and UX
+- Deployed demo on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# E-commere-with-Firebase" 
+## Project structure (high-level)
